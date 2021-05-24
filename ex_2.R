@@ -9,8 +9,8 @@ library(readxl)
 
 setwd("C:/Users/55879/Documents/Eletiva_analise_dados/Eletiva_analise_dados/exercicio_2") ## definindo area
 
-situacao_final <- dir(pattern = "*.csv") ##List all files from the folder
-ldf <- list() ##Clista para o loop
+situacao_final <- dir(pattern = "*.csv") ##lista csv
+ldf <- list() ##lista para o loop
 
 for (k in 1:length(situacao_final)){
   ldf[[k]] <- read.csv(situacao_final[k],sep = ";")
